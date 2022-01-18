@@ -2,32 +2,31 @@
 Feature: Home Page Title
 
 @westerndigital
-Scenario: Page Title
+Scenario: Page Title Westerndigital
   Given I open "https://www.westerndigital.com/" url
   Then Page title should be "Hard Drives, USB Drives, and Memory Cards | Western Digital"
-   And Page title should not be "Hard Drives, USB Drives, and Memory Cards | Western Digital"
-  When I wait "10" seconds
+  # When I wait "10" seconds
 
-@bash
-  Scenario: Page Title
-   Given I open "https://bash.im" url
-   Then Page title should be "Цитатник рунета"
-   When I wait "10" seconds
+@handler
+  Scenario: Page Title Handler
+   Given I open "https://handler.by/" url
+   Then Page title should be "Мебельный сервис | Мебельная фурнитура | Сообщество специалистов и партнёров"
+  #  When I wait "10" seconds
 
-@epam
-  Scenario: Page Title EPAM
-   Given I open "https://www.epam.com" url
-   Then Page title should not be "Цитатник рунета"
-   When I wait "10" seconds
+@proz
+  Scenario: Page Title Proz.com
+   Given I open "https://www.proz.com/" url
+   Then Page title should not be "Freelance translators & Translation companies | ProZ.com"
+  #  When I wait "10" seconds
 
 @so
 Scenario Outline: Page titles
   Given I open "<URL>" url
+  Then Page title should be "<Title>" 
   # When I wait "10" seconds
-  Then Page title should be "<Title>"
   
-
+  
   Examples:
-    | URL                            | Title |
-    | https://www.handler.by/        | Мебельный сервис \| Мебельная фурнитура \| Сообщество специалистов и партнёров|
-    | https://bash.im                | Цитатник Рунета  |
+    | URL                             | Title |
+    | https://www.proz.com/           | Freelance translators & Translation companies \| ProZ.com|
+    | https://www.westerndigital.com/ | Hard Drives, USB Drives, and Memory Cards \| Western Digital  |

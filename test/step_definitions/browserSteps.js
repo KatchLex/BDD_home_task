@@ -15,5 +15,5 @@ Then(/^Page title should (not )?be "([^"]*)"$/, async function (notArg, title) {
 });
 
 // When(/^I wait "([^"]*)" seconds$/, function (waitSeconds) {
-//     return browser.sleep(waitSeconds * 1000);
+//     return browser.sleep(waitSeconds * 10000);
 // });
