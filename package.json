@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KatchLex/BDD_home_task.git"
+    "url": "git+https://github.com/KatchLex/bdd_task.git"
   },
   "keywords": [
     "BDD",
@@ -20,9 +20,9 @@
   "author": "Alexander_Kachalov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KatchLex/BDD_home_task/issues"
+    "url": "https://github.com/KatchLex/bdd_task/issues"
   },
-  "homepage": "https://github.com/KatchLex/BDD_home_task#readme",
+  "homepage": "https://github.com/KatchLex/bdd_task#readme",
   "dependencies": {
     "chai": "^4.3.4",
     "cucumber": "^6.0.5",
